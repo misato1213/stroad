@@ -1,0 +1,191 @@
+/* トップ */
+.jumbotron{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    border-radius: 0px;
+    margin-bottom: 0px;
+  }
+.jtitle {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    text-shadow: 0 0 1em #ccc, 0 0 0.2em #ccc;
+}
+ .jtitle > h1{
+    padding-top: 250px;
+    text-align: center;
+ }
+ .jtitle > p{
+    text-align: center;
+ }
+
+ #video-background{ 
+    position: absolute;
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+}
+ /* トップ End*/
+
+ #toiawase{
+     background-image: url("../images/bg.jpg");
+ }
+  
+/* 大見出し */
+.ctitle {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+/* 大見出し End*/
+
+/* 小見出し */
+.categoris {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.categoris > h4 {
+    margin-left: 10px;
+}
+
+.detaile {
+    margin: 10px 0px 40px 10px;
+}
+/* 小見出し End*/
+
+/* Google Map */
+.gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+/* Google Map End*/
+
+/* Icon */
+i {
+    padding-right: 7px;
+}
+/* Icon End */
+
+/* Footer */
+footer {
+    margin-top: 150px;
+}
+/* Footer End */
+
+.service-img{
+    height: 200px;
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+}
+.member-img{
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.p-style{
+    font-size: 120%;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* 共通 */
+.padding-zero {
+    padding: 0px;
+}
+.padding-btm {
+    padding-bottom: 100px;
+}
+
+/* h3 {
+    position: relative;
+    display: inline-block;
+    margin: 47px 0;
+    text-shadow: 0 0 2px white;
+}
+h3:before {
+    content: "";
+    position: absolute;
+    background: #93d9ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    border: dashed 1px white;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    box-shadow: 0px 0px 0px 5px #93d9ff;
+} */
+
+/* h4 {
+    position: relative;
+    color: #000;
+    text-shadow: 0 0 2px white;
+  }
+  
+  h4:before {
+    content: "";
+    position: absolute;
+    background: #a9e1ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    border: dashed 1px white;
+    left: -15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+  } */
+h3 {
+    text-align: center;
+}
+h3 span{
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5em;
+} 
+h3 span::before, h3 span::after{
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 1.5em;
+    height: 1px;
+    background-color: black;
+}
+h3 span::before {left: 100%;}
+h3 span::after { right: 100%;}
+
+h4 {
+    padding: .25em 0 .25em .75em;
+    border-left: 6px solid #ccc;
+}
+.anchor{
+    display: block;
+    padding-top: 1px;
+    margin-top: 0px;
+}
+  /* 共通 End*/
