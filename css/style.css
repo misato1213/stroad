@@ -283,29 +283,21 @@ h6:after {
   color: #fff;
   background: #ffb246;
 }
-
-
- /* トップ End*/
-
-.row-content {
-  margin: 0px auto;
-  padding: 20px 0px;
-  border-bottom: 3px  #f38e00;
-  min-height: 300px;
- }
- .intro img {
+.intro img {
   margin-bottom: 20px;
  }
+
+ /* トップ End*/
+ 
  #jigyou {
-  /* margin-top: 40px;
-  padding-top: 100px;
-  padding-bottom: 20px;
+  padding-top: 4%;
+  padding-bottom: 4px;
   background-size: cover;
   background: url("../images/cta03.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   height:100%;
-  background-color: #000; */
+  background-color: #000;
   z-index: 0;
 }
 #jigyou::before {
@@ -363,22 +355,6 @@ h6:after {
 }
 .update-padding-btm {
   padding-bottom: 30px;
-}
-
-.bg_scroll_1 {
-	height: auto;
-	background-image: url("../images/cta03.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-	z-index: 1;
-}
-.inner{
-  /* min-height: 800px; */
-  position: relative;
-  background: rgba(255, 255, 255, 0.5) url() repeat;
-  width: 100%;
 }
  
  /* Blockquote */
@@ -550,7 +526,7 @@ h6:after {
 }
 .footer-bg::before {
   content: ' ';
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 124, 27, 0.5);
   position: absolute;
   top: 0;
   right: 0;
