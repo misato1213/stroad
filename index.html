@@ -15,9 +15,63 @@
     </head>
 
     <body>
+        <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
+            <p id="topbutton">▲</p>
+        </a>
         <!-- Nav bar -->
+
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top tm-navbar scroll">
+        <section id="top" class="text-white tm-font-big tm-parallax">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+
+              <div class="container margin-zero">   
+                <div class="tm-next">
+                    <a href="#top" class=""><img src="images/logo-sm.png" width="auto" height="60" alt="Logo"></a>
+                </div>             
+                  
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars navbar-toggler-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">はじめに</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jigyou">事業内容</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gaiyou">会社概要</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#toiawase">お問合わせ</a>
+                    </li>
+                  </ul>
+    
+                </div>
+              </div>     
+            </nav>
+            
+            <div class="text-center tm-hero-text-container">
+              <div class="tm-hero-text-container-inner">
+                  <h1 class="tm-hero-title">株式会社<br class="br-sp"/>STロード</h1>
+                  <p class="tm-hero-subtitle">
+                    Welcom to our Web page!
+                  </p>
+              </div>        
+            </div>
+            <div class="tm-next tm-intro-next">
+                <a href="#intro" class="text-center tm-down-arrow-link">
+                  <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+                </a>
+              </div>
+              </section>
+            <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top tm-navbar scroll">
                 <a class="navbar-brand" href="#top">
                     <img src="images/logo-sm.png" width="auto" height="60" alt="Logo">
                 </a>
@@ -43,113 +97,153 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav> -->
             <!-- Nav bar end-->
             
             <!-- jumbotron -->
-            <div class="jumbotron">
+            <!-- <div class="jumbotron">
                 <video id="video-background" preload muted autoplay loop poster="images/banner.jpg">
-                  <!-- <source src="images/banner-v.mp4" type="video/mp4" alt="Top video"> -->
+                  <source src="images/banner-v.mp4" type="video/mp4" alt="Top video">
                 </video>
                 <div class="jtitle">
-                  <h1 class="justify-content-end"><a href="#intro" class="nav-link">株式会社　ＳＴロード</a></h1>
+                  <h1 class="justify-content-end"><a href="#intro">株式会社　ＳＴロード</a></h1>
                   <p>Welcome to our Web page!</p>
                 </div>
-            </div>
+            </div> -->
             <!-- jumbotron end -->
         </header>
 
         <!-- はじめに -->
-        <section id="intro" class="tm-section-pad-top-intro tm-section-pad-bottom anchor">
+        <section id="intro" class="tm-section-pad-top-intro anchor">
             <div class="container padding-btm">
                 <div class="row ctitle">
                     <h4 class="mx-auto"><span>はじめに</span></h4>
                 </div>
-                <div class="row padding-btm">
+                <div class="row">
                     <div class="col-lg-6 intro">
                     <img src="images/service5.jpg" alt="Image" class="img-fluid tm-intro-img" />
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 intro">
                     <div class="tm-intro-text-container">
-                        <h5 class="tm-text-primary mb-4 tm-section-title">あいさつ</h5>
-                        <p class="mb-4 tm-intro-text">
+                        <h5 class="mb-4 tm-section-title categoris">あいさつ</h5>
+                        <p class="mb-4 tm-intro-text detail">
                             STロードのWebページへようこそ！ＳＴロードでは様々なサービスを行っています。お気軽にお尋ねください。
                         </p>
                     </div>
                     </div>
                 </div>
+
+                <h5 class="categoris">お知らせ</h5>
                 <div class="row">
-                    <h5>お知らせ</h5>
-                    <div class="col-12 detaile">
-                        <p><2020年6月13日><br />
-                            当社が代理店を務める株式会社ディジット社では、社員50人未満の企業様に特別なストレスチェックを提供しています。<br />
-                            本来、50人以上の企業様で義務化されているストレスチェックですが、この新型コロナウィルスの時期に、社員に対するケアは50人かどうかは関係ありません。<br />
-                            50人未満の企業様がお手軽に受検頂けるストレスチェックをご提供します。<br />
-                            <ul>
-                                <li>50人未満であれば、人数によらず20,000円(税別)で実施します</li>
-                                <li>ストレスチェック実施までの面倒な準備をディジット社が引き受けます</li>
-                                <li>受検頂いた方々にマスク2枚を進呈します</li>
-                            </ul>
-                            ご興味ありましたら、<a href="https://www.digit.co.jp/app/lessthanfifty/form">株式会社ディジット社</a> にお問合せ下さい。
+                    <div class="col-12 detail">
+
+                        <p>2019年6月13日
+                            <a class="" data-toggle="collapse" href="#update0007" role="" aria-expanded="false" aria-controls="collapseExample">
+                                社員50人未満の企業様に特別なストレスチェック
+                            </a>
                         </p>
-                        <p><2019年6月14日><br />
-                            ｢STロード からだ ケア ルーム｣では、｢血流測定会｣を下記の日程にて開催致します。参加費は無料となっておりますので是非ご来場下さい。<br />
-                            <ul>
-                                <li>2019年6月22日(土) 14:30～17:00</li>
-                                <li>2019年6月23日(日) 10:00～12:00</li>
-                            </ul>
-                            ​｢血流測定会｣の詳細に付きましては下記リンクからダウンロードが出来ますので是非ご覧下さい。<br />
-                            <a href="http://stroad.jp/uploads/1/2/2/9/122980264/%E8%A1%80%E6%B5%81%E6%B8%AC%E5%AE%9A%E4%BC%9A20190622.pdf">血流測定会ファイル</a>
+                        <div class="collapse update-padding-btm" id="update0007">
+                            <div class="card card-body">
+                                    当社が代理店を務める株式会社ディジット社では、社員50人未満の企業様に特別なストレスチェックを提供しています。<br />
+                                    本来、50人以上の企業様で義務化されているストレスチェックですが、この新型コロナウィルスの時期に、社員に対するケアは50人かどうかは関係ありません。<br />
+                                    50人未満の企業様がお手軽に受検頂けるストレスチェックをご提供します。<br />
+                                    <ul>
+                                        <li>50人未満であれば、人数によらず20,000円(税別)で実施します</li>
+                                        <li>ストレスチェック実施までの面倒な準備をディジット社が引き受けます</li>
+                                        <li>受検頂いた方々にマスク2枚を進呈します</li>
+                                    </ul>
+                                    ご興味ありましたら、<a href="https://www.digit.co.jp/app/lessthanfifty/form">株式会社ディジット社</a> にお問合せ下さい。
+                            </div>
+                        </div>
+
+                        <p>2019年6月14日
+                            <a class="" data-toggle="collapse" href="#update0006" role="" aria-expanded="false" aria-controls="collapseExample">
+                                STロード からだ ケア ルームで｢血流測定会｣を開催します
+                            </a>
                         </p>
-                        
+                        <div class="collapse update-padding-btm" id="update0006">
+                            <div class="card card-body">
+                                ｢STロード からだ ケア ルーム｣では、｢血流測定会｣を下記の日程にて開催致します。参加費は無料となっておりますので是非ご来場下さい。<br />
+                                <ul>
+                                    <li>2019年6月22日(土) 14:30～17:00</li>
+                                    <li>2019年6月23日(日) 10:00～12:00</li>
+                                </ul>
+                                ​｢血流測定会｣の詳細に付きましては下記リンクからダウンロードが出来ますので是非ご覧下さい。<br />
+                                <a href="http://stroad.jp/uploads/1/2/2/9/122980264/%E8%A1%80%E6%B5%81%E6%B8%AC%E5%AE%9A%E4%BC%9A20190622.pdf">血流測定会ファイル</a>
+                            </div>
+                        </div>
+
+                        <p>2019年5月11日
+                            <a class="" data-toggle="collapse" href="#update0005" role="" aria-expanded="false" aria-controls="collapseExample">
+                                STロード からだ ケア ルームの案内パンフレットを作成しました。
+                            </a>
+                        </p>
+                        <div class="collapse update-padding-btm" id="update0005">
+                            <div class="card card-body">
+                                ｢STロード からだ ケア ルーム｣ の ご案内パンフレットを作成致しました。下記リンクからダウンロードができますので是非ご覧下さい。<br />
+                                <a href="http://stroad.jp/uploads/1/2/2/9/122980264/%E3%81%8B%E3%82%89%E3%81%A0%E3%82%B1%E3%82%A2%E3%83%AB%E3%83%BC%E3%83%A0%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%8820190510.pdf">からだケアルームパンフレット</a>
+                            </div>
+                        </div>
+
                         <div class="grad-wrap">
                             <input id="trigger1" class="grad-trigger" type="checkbox">
                             <label class="grad-btn" for="trigger1"></label>
                             <div class="grad-item">
-                                <!--ここから-->
-                                <div>
-                                    <p>
-                                        <2019年5月11日><br />
-                                        ｢STロード からだ ケア ルーム｣ の ご案内パンフレットを作成致しました。下記リンクからダウンロードができますので是非ご覧下さい。<br />
-                                        <a href="http://stroad.jp/uploads/1/2/2/9/122980264/%E3%81%8B%E3%82%89%E3%81%A0%E3%82%B1%E3%82%A2%E3%83%AB%E3%83%BC%E3%83%A0%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%8820190510.pdf">からだケアルームパンフレット</a>
-                                    </p>
-                                </div>
-                                <div>
-                                    <p>
-                                        <2019年2月15日><br />
+                                <!--非表示エリア-->
+
+                                <p>2019年2月15日
+                                    <a class="update" data-toggle="collapse" href="#update0004" role="" aria-expanded="false" aria-controls="collapseExample">
+                                        オープン記念キャンペーンの延長
+                                    </a>
+                                </p>
+                                <div class="collapse update-padding-btm" id="update0004">
+                                    <div class="card card-body">
                                         オープン記念キャンペーンを2019年2月28日(木)まで延長させて頂きます。<br />
                                         ​初めてのお客様は20%オフ、2回目以降のお客様は10%オフになります。<br />
                                         2回目以降のお客様は、キャンペーン期間中に何度お越し頂いても毎回10%オフになります。<br />
-                                        料金表は <a href="#">こちら</a>をご覧下さい。
-                                    </p>
+                                        料金表は <a href="#">こちら</a>をご覧下さい。                                    </div>
                                 </div>
-                                <div>
-                                    <p>
-                                        <2019年1月9日><br />
+
+                                <p>2019年1月9日
+                                    <a class="" data-toggle="collapse" href="#update0003" role="" aria-expanded="false" aria-controls="collapseExample">
+                                        オープン記念キャンペーンのご連絡
+                                    </a>
+                                </p>
+                                <div class="collapse update-padding-btm" id="update0003">
+                                    <div class="card card-body">
                                         「ＳＴロード からだ ケア ルーム」では、オープン記念キャンペーンを実施致します。<br />
                                         2019年2月15日(金)までの期間、初めてのお客様は20%オフ、2回目以降のお客様は10%オフになります。<br />
                                         2回目以降のお客様は、キャンペーン期間中に何度お越し頂いても毎回10%オフになります。<br />
-                                        料金表は <a href="#">こちら</a>をご覧下さい。<br />
-                                        2020年1月9日　更新
-                                    </p>
+                                        料金表は <a href="#">こちら</a>をご覧下さい。
+                                    </div>
                                 </div>
-                                <div>
-                                    <p>
-                                        <2019年1月9日><br />
+
+                                <p>2019年1月9日
+                                    <a class="" data-toggle="collapse" href="#update0002" role="" aria-expanded="false" aria-controls="collapseExample">
+                                        「ＳＴロード からだ ケア ルーム」オープン
+                                    </a>
+                                </p>
+                                <div class="collapse update-padding-btm" id="update0002">
+                                    <div class="card card-body">
                                         「ＳＴロード からだ ケア ルーム」をオープン致しました。<br />
                                         ​基本的には予約制としておりますが、当日予約も受け付けております。お気軽にご相談下さい。<br />
                                         サービス内容に関しましては、｢<a href="#">Services</a>｣ページをご参照下さい。<br />
                                         予約に関しましては、<a href="#">田村さき子</a> 宛てにメールにてお尋ね下さい。<br />
                                         一度お越し頂きましたお客様には2回目以降のご連絡方法についてご相談させて頂きます。(メール、LINE、電話など)
-                                    </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="padding-btm">
-                                        <2019年1月9日><br />
+
+                                <p>2019年1月9日
+                                    <a class="" data-toggle="collapse" href="#update0001" role="" aria-expanded="false" aria-controls="collapseExample">
+                                        株式会社ＳＴロードのホームページを開設
+                                    </a>
+                                </p>
+                                <div class="collapse update-padding-btm" id="update0001">
+                                    <div class="card card-body">
                                         株式会社ＳＴロードのホームページを開設しました。今後とも宜しくお願い申し上げます。
-                                    </p>
+                                    </div>
                                 </div>
-                                <!--ここまで-->
+                                <!--非表示エリア End-->
                             </div>
                         </div>
                     </div>
@@ -159,121 +253,101 @@
 
         <!-- 事業内容 -->
         <section id="jigyou" class="anchor">
-            <div class="container  padding-btm">
+            <div class="container padding-btm">
                 <div class="row ctitle">
                     <h4 class="mx-auto"><span>事業内容</span></h4>
                 </div>
-                <h5>リラクゼーション事業</h5>
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                        <img class="d-flex align-self-center serv-img" src="images/service1.jpg" alt="" />
+
+                <h5 class="categoris">リラクゼーション事業</h5>
+                <div class="row detail">
+                    <div class="col-12 col-sm-3 serv-icon-bg">
+                        <i class="fas fa-hand-holding-heart fa-5x serv-icon"></i>
                     </div>
-                    <div class="col col-sm order-sm-last col-md">
-                        <div class="media">
-                            <div class="media-body">
-                                <h6 class="mt-0">からだケアルーム</h6>
-                                <p class="d-none d-sm-block media-p-style">以下のようなをサービスしております。
-                                    <ul class="media-p-style">
-                                        <li>整体</li>
-                                        <li>クラニオ セイクラル リリース セラピー</li>
-                                        <li>エステ</li>
-                                        <li>遠赤外線温熱ドーム</li>
-                                    </ul>
-                                    <span class="media-p-style">
-                                    近隣に限りますが出張施術も行っておりますのでご相談下さい。
-                                    ​詳細に付きましては、<a href="#">Services</a>のページでご確認下さい。</span></p>
-                            </div>
-                            <i class="fas fa-hand-holding-heart fa-5x align-self-center serv-icon"></i>
-                        </div>
+                    <div class="col-12 col-sm-9 serv-icon-detail">
+                        <h6 class="mt-0">からだケアルーム</h6>
+                        <p class="serv-p-style">以下のようなをサービスしております。
+                            <ul class="serv-p-style">
+                                <li>整体</li>
+                                <li>クラニオ セイクラル リリース セラピー</li>
+                                <li>エステ</li>
+                                <li>遠赤外線温熱ドーム</li>
+                            </ul>
+                            <span class="serv-p-style">
+                            近隣に限りますが出張施術も行っておりますのでご相談下さい。
+                            ​詳細に付きましては、<a href="#">Services</a>のページでご確認下さい。
+                            </span>
+                        </p>
                     </div>
                 </div>
 
-                <h5>スポーツ事業</h5>
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                        <img class="d-flex align-self-center serv-img" src="images/service2.jpg" alt=""　/>
+                <h5 class="categoris">スポーツ事業</h5>
+                <div class="row detail">
+                    <div class="col-12 col-sm-3 serv-icon-bg">
+                        <i class="fas fa-skating fa-5x align-self-center serv-icon"></i>
                     </div>
-                    <div class="col col-sm order-sm-first col-md">
-                        <div class="media">
-                            <i class="fas fa-skating fa-5x align-self-center serv-icon"></i>
-                            <div class="media-body">
-                                <h6 class="mt-0">フィギアスケートコーチ</h6>
-                                <p class="d-none d-sm-block media-p-style">フィギュアスケートに特化した個別トレーニングを行っています。
-                                    <ul class="media-p-style">
-                                        <li>ジャンプ力の強化</li>
-                                        <li>三半規管のトレーニング</li>
-                                        <li>アスリートのための基礎トレーニング</li>
-                                    </ul>
-                                    <span class="media-p-style">
-                                    ​詳細に付きましては、<a href="#">Services</a>のページでご確認下さい。</span></p>
-                            </div>
-                        </div>
+                    <div class="col-12 col-sm-9 serv-icon-detail">
+                        <h6 class="mt-0">フィギアスケートコーチ</h6>
+                        <p class="serv-p-style">
+                            フィギュアスケートに特化した個別トレーニングを行っています。
+                            <ul class="serv-p-style">
+                                <li>ジャンプ力の強化</li>
+                                <li>三半規管のトレーニング</li>
+                                <li>アスリートのための基礎トレーニング</li>
+                            </ul>
+                            <span class="serv-p-style"​> 詳細に付きましては、<a href="#">Services</a>のページでご確認下さい。</span>
+                        </p>
                     </div>
                 </div>
                 
-                <h5>IT事業</h5>
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                        <img class="d-flex align-self-center serv-img" src="images/service3.jpg" alt="" />
+                <h5 class="categoris">IT事業</h5>
+                <div class="row detail">
+                    <div class="col-12 col-sm-3 serv-icon-bg">
+                        <i class="fas fa-user-tie fa-5x align-self-center serv-icon"></i>
                     </div>
-                    <div class="col col-sm order-sm-last col-md">
-                        <div class="media">
-                            <div class="media-body">
-                                <h6 class="mt-0">IoT関連営業業務請負</h6>
-                                <p class="d-none d-sm-block media-p-style">IoT関連を主とした営業業務、マーケティング業務を業務委託にてお受けしております。<br />
-                                    ​長年IoT企業に勤務した経験を活かし、特にパートナー(代理店)に対しての施策展開を得意としております。<br />
-                                    パートナー(代理店)の活性化、満足度向上を図りたい企業の方は、是非ご相談下さい。<br />
-                                    お問い合わせに関しましては、田村真一宛てにメールにてご連絡下さい。</p>
-                            </div>
-                            <i class="fas fa-laptop fa-5x align-self-center serv-icon"></i>
-                        </div>
+                    <div class="col-12 col-sm-9 serv-icon-detail">
+                        <h6 class="mt-0">IoT関連営業業務請負</h6>
+                        <p class="serv-p-style">
+                            IoT関連を主とした営業業務、マーケティング業務を業務委託にてお受けしております。<br />
+                            ​長年IoT企業に勤務した経験を活かし、特にパートナー(代理店)に対しての施策展開を得意としております。<br />
+                            パートナー(代理店)の活性化、満足度向上を図りたい企業の方は、是非ご相談下さい。<br />
+                            お問い合わせに関しましては、田村真一宛てにメールにてご連絡下さい。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row detail">
+                    <div class="col-12 col-sm-3 serv-icon-bg">
+                        <i class="fas fa-laptop-house fa-5x align-self-center serv-icon"></i>
+                    </div>
+                    <div class="col-12 col-sm-9 serv-icon-detail">
+                        <h6 class="mt-0">代理店業務</h6>
+                        <p class="serv-p-style">
+                            株式会社ディジットが提供する 組織診断サービス と ストレスチェックサービス の代理店を行っております。<a href="#">(ディジット社ホームページ)</a>
+                            <ul class="serv-p-style">
+                                <li>組織診断サービス｢BBA on CLOUD｣では、社員へのアンケートを自動集計、自動分析し、組織の｢今｣の状況を報告書でご提示します。</li>
+                                <li>ストレスチェックサービス｢SC on CLOUD｣は、厚生労働省が50名以上の従業員のいる企業に対して義務化をしているストレスチェックを実施するためのサービスです。</li>
+                            </ul>
+                            <span class="serv-p-style">お問い合わせに関しましては、田村真一宛てにメールにてご連絡下さい。</span>
+                        </p>
                     </div>
                 </div>
 
-
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                        <img class="d-flex align-self-center serv-img" src="images/service4.jpg" alt=""　/>
+                <div class="row detail">
+                    <div class="col-12 col-sm-3 serv-icon-bg">
+                        <i class="fas fa-stethoscope fa-5x align-self-center serv-icon"></i>
                     </div>
-                    <div class="col col-sm order-sm-first col-md">
-                        <div class="media">
-                            <i class="fas fa-laptop-house fa-5x align-self-center serv-icon"></i>
-                            <div class="media-body">
-                                <h6 class="mt-0">代理店業務</h6>
-                                <p class="d-none d-sm-block media-p-style">
-                                    株式会社ディジットが提供する 組織診断サービス と ストレスチェックサービス の代理店を行っております。<a href="#">(ディジット社ホームページ)</a>
-                                    <ul class="media-p-style">
-                                        <li>組織診断サービス｢BBA on CLOUD｣では、社員へのアンケートを自動集計、自動分析し、組織の｢今｣の状況を報告書でご提示します。</li>
-                                        <li>ストレスチェックサービス｢SC on CLOUD｣は、厚生労働省が50名以上の従業員のいる企業に対して義務化をしているストレスチェックを実施するためのサービスです。</li>
-                                    </ul>
-                                    <span class="media-p-style">お問い合わせに関しましては、田村真一宛てにメールにてご連絡下さい。</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                        <img class="d-flex align-self-center serv-img" src="images/service5.jpg" alt="" />
-                    </div>
-                    <div class="col col-sm order-sm-last col-md">
-                        <div class="media">
-                            <div class="media-body">
-                                <h6 class="mt-0">組織行動診断</h6>
-                                <p class="d-none d-sm-block media-p-style">一般社団法人 組織行動診断士協会が認定する｢組織行動診断士｣資格を有しております。<a href="#">(一般社団法人 組織行動診断士協会 ホームページ)</a><br />
-                                    前述の、株式会社ディジット社の提供する 組織行動診断サービス｢BBA on CLOUD｣ で提供される報告書の内容を深く読み解き、組織の｢今｣の状況をご報告する報告会を実施致します。<br />
-                                    働き方改革･健康経営に取り組みたいと考えている企業も多いと思いますが、まだまだ｢何から取り組めば良いのか？｣と、手を付けられていない企業がほとんどだと思っております。組織行動診断サービスを、そのスタートに利用されては如何でしょうか。<br />
-                                    お問い合わせに関しましては、田村真一宛てにメールにてご連絡下さい。
-                                </p>
-                            </div>
-                            <i class="fas fa-stethoscope fa-5x align-self-center serv-icon"></i>
-                        </div>
+                    <div class="col-12 col-sm-9 serv-icon-detail">
+                        <h6 class="mt-0">組織行動診断</h6>
+                        <p class="serv-p-style">
+                            一般社団法人 組織行動診断士協会が認定する｢組織行動診断士｣資格を有しております。<a href="#">(一般社団法人 組織行動診断士協会 ホームページ)</a><br />
+                            前述の、株式会社ディジット社の提供する 組織行動診断サービス｢BBA on CLOUD｣ で提供される報告書の内容を深く読み解き、組織の｢今｣の状況をご報告する報告会を実施致します。<br />
+                            働き方改革･健康経営に取り組みたいと考えている企業も多いと思いますが、まだまだ｢何から取り組めば良いのか？｣と、手を付けられていない企業がほとんどだと思っております。組織行動診断サービスを、そのスタートに利用されては如何でしょうか。<br />
+                            お問い合わせに関しましては、田村真一宛てにメールにてご連絡下さい。
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-
         
         <!-- 会社概要 -->
         <section id="gaiyou" class="anchor">
@@ -281,10 +355,9 @@
                 <div class="row ctitle">
                     <h4 class="mx-auto"><span>会社概要</span></h4>
                 </div>
-                <div class="row categoris">
-                    <h5>会社紹介</h5>
-                </div>
-                <div class="row detaile">
+
+                <h5 class="categoris">会社紹介</h5>
+                <div class="row detail">
                     <table  class="table table-striped">
                         <thead>
                             <tr>
@@ -317,16 +390,23 @@
                     </table>
                 </div>
 
-                <div class="row categoris">
-                    <h5>メンバー</h5>
-                </div>
-                <div class="row detaile">
+                <h5 class="categoris">メンバー</h5>
+                <div class="row detail">
                     <div class="col-sm-6">
                         <a id="profile1"><img class="card-img-top member-img" src="images/pic01.jpg" alt="代表取締役"></a>
                         <div class="card-body">
                           <p class="card-text p-style">代表取締役　田村 真一</p>
                         </div>
                     </div>
+                    <!-- <figure class="snip1379">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample84.jpg" alt="sample84" />
+                        <figcaption>
+                          <h3>Ruby Von Rails</h3>
+                          <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                        </figcaption><i class="ion-ios-home-outline"></i>
+                        <a href="#"></a>
+                      </figure> -->
+
                     <div class="col-sm-6">
                         <a id="profile2"><img class="card-img-top member-img" src="images/pic02.jpg" alt="代表取締役"></a>
                         <div class="card-body">
@@ -335,13 +415,11 @@
                     </div>
                 </div>
 
-                <div class="row categoris">
-                    <h5>アクセス</h5>
-                </div>
-                <div class="row gmap detaile">
+                <h5 class="categoris">アクセス</h5>
+                <div class="row gmap detail">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.666000216466!2d139.4738701152542!3d35.512536180233866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f892923fa2ff%3A0xc55778af1d6280f0!2s7-ch%C5%8Dme-8-17%20Ogawa%2C%20Machida%2C%20T%C5%8Dky%C5%8D-to%20194-0003%2C%20Japan!5e0!3m2!1sen!2sca!4v1597814577515!5m2!1sen!2sca"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="row detaile">
+                <div class="row detail">
                     <div class="col-12">
                     <i class="fas fa-subway trnspt-icon"></i>電車で
                     <ul><li>東急田園都市線｢南町田｣駅または｢すずかけ台｣駅から共に徒歩8～10分です。</li></ul>
@@ -351,20 +429,6 @@
                         <li>駐車場は1台分ございます。</li>
                         <li>ナビご利用で｢町田市小川7-8-17｣が検索できない場合は｢町田市小川1805-11｣(旧住所表記)で検索してください。</li>
                     </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 画像クオート -->
-        <section>
-            <div class="blockquote-img">
-                <div class="blockquote-wrapper">
-                    <div class="blockquote">
-                      <h1>
-                        Start before you are ready
-                       </h1>
-                      &mdash;Steven Pressfield
                     </div>
                 </div>
             </div>
@@ -383,10 +447,10 @@
                             <div class="form-row">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <img class="" src="images/pic01.jpg" alt="CEO" />
+                                        <div class="col-lg-6">
+                                            <img class="mx-auto" src="images/pic01.jpg" alt="CEO" />
                                         </div>
-                                        <div class="col-sm-6 media-p-style">
+                                        <div class="col-lg-6 media-p-style">
                                             <h6 class="">代表取締役　田村 真一</h6>
                                             <h9 class="">経歴</h9>
                                             <p></p>
@@ -426,10 +490,10 @@
                             <div class="form-row">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-sm-6">
+                                        <div class="col-lg-6">
                                             <img class="" src="images/pic02.jpg" alt="CEO" />
                                         </div>
-                                        <div class="col-sm-6 media-p-style">
+                                        <div class="col-lg-6 media-p-style">
                                             <h6 class="">取締役　田村 さき子</h6>
                                             <h9 class="">経歴</h9>
                                             <p></p>
@@ -454,15 +518,30 @@
                 </div>
             </div>
         </div>
+
+        <!-- 画像クオート -->
+        <section>
+            <div class="blockquote-img">
+                <div class="blockquote-wrapper">
+                    <div class="blockquote">
+                      <h1>
+                        Start before you are ready
+                       </h1>
+                      &mdash;Steven Pressfield
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- 問い合わせ -->
         <section id="toiawase" class="anchor">
             <div class="container padding-btm">
                 <div class="row ctitle">
-                    <h4 class="mx-auto"><span>お問合せ</span></h4>
+                    <h4 class="mx-auto"><span>お問合わせ</span></h4>
                 </div>
-                <div class="row detaile">
-                    <form class="form-style col-12">
+                <div class="row detail">
+                    <form class="form-style col-12" action="/ooo/RegisterUser" method="get"
+                    onSubmit="return registerFormCheck(this)">
                         <div class="form-group row">
                             <label for="inputName" class="col-sm-2 col-form-label">お名前</label>
                             <div class="col-sm-10">
@@ -472,15 +551,14 @@
                         <div class="form-group row">
                             <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email アドレス</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">カテゴリ</label>
                             <div class="col-sm-10">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>項目を選択してください</option>
+                                <select class="form-control" id="categorySelect">
                                     <option>リラクゼーション事業に関して</option>
                                     <option>スポーツ事業に関して</option>
                                     <option>IT事業に関して</option>
@@ -491,13 +569,13 @@
                         <div class="form-group row">
                             <label for="exampleFormControlTextarea1"  class="col-sm-2 col-form-label">お問合せ内容</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                                <textarea class="form-control" id="inputTextarea" rows="7"></textarea>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <button type="submit" class="btn btn-warning mx-auto">Submit</button>
+                        </div>
                     </form>
-                </div>
-                <div class="row">
-                    <button type="submit" class="btn btn-warning mx-auto">Submit</button>
                 </div>
             </div>
         </section>
@@ -508,18 +586,21 @@
                 <div class="container">
                     <div class="row">
                         <h1><a class="" href="#top">株式会社　ＳＴロード</a></h1>
+                        <div class="mb-5 tm-underline">
+                          <div class="tm-underline-inner"></div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-3">
                             <h2><a class="" href="#intro">はじめに</a></h2>
-                            <ul>
-                                <li>あいさつ</li>
-                                <li>お知らせ</li>
+                            <ul class="d-none d-md-block">
+                                <li class="">あいさつ</li>
+                                <li class="">お知らせ</li>
                             </ul>
                         </div>
                         <div class="col-sm-3">
                             <h2><a class="" href="#jigyou">事業内容</a></h2>
-                            <ul>
+                            <ul class="d-none d-md-block">
                                 <li>リラクゼーション事業</li>
                                 <li>スポーツ事業</li>
                                 <li>IT事業</li>
@@ -527,29 +608,32 @@
                         </div>
                         <div class="col-sm-3">
                             <h2><a class="" href="#gaiyou">会社概要</a></h2>
-                            <ul>
+                            <ul class="d-none d-md-block">
                                 <li>会社情報</li>
                                 <li>メンバー</li>
                                 <li>アクセス</li>
                             </ul>
                         </div>
                         <div class="col-sm-3">
-                            <h2><a class="" href="#toiawase">問い合わせ</a></h2>
+                            <h2><a class="" href="#toiawase">お問合わせ</a></h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <h9>Copyright © ST Road Co., Ltd.</h9>
+                    <div class="row cpright">
+                        <h9 class=" mx-auto">Copyright © ST Road Co., Ltd.</h9>
                     </div>
                 </div>
             </div>
         </footer>
+	</form>
+
     </body>
+    
 
     <!-- <script src="js/script.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
     <script>
         $(window).scroll(function () {
         if ($(window).scrollTop() >= 240) {
@@ -560,7 +644,6 @@
         // $('a').css('color','#a3a3a3');
         }
         });
-
         
         $('#profile1').click(function () {
             $('#profileModal1').modal('show')
@@ -569,15 +652,149 @@
             $('#profileModal2').modal('show')
         });
 
-        $(function(){
-            $(document).on("click", "button", function(){
-                var text = $(this).text();
-                $("button").text("開く");
-                if (text === "開く") {
-                    $(this).text("閉じる");
-                }
-            });
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
         });
+
+        $(function() {
+        // スクロールしたときに実行
+        $(window).scroll(function () {
+            // 目的のスクロール量を設定(px)
+            var TargetPos = 350;
+            // 現在のスクロール位置を取得
+            var ScrollPos = $(window).scrollTop();
+            // 現在位置が目的のスクロール量に達しているかどうかを判断
+            if( ScrollPos >= TargetPos) {
+                // 達していれば表示
+                $("#topbutton").fadeIn();
+            }
+            else {
+                // 達していなければ非表示
+                $("#topbutton").fadeOut();
+            }
+        });
+        });
+
+        
+        function registerFormCheck(frm){
+            var hissu = Array("inputName","inputEmail","inputTextarea");
+            var len = hissu.length;
+            var Seiki=/[!#-9A-~]+@+[a-z0-9]+.+[^.]$/i;
+            for(i=0; i<len; i++){
+                var obj = frm.elements[hissu[i]];
+                if(hissu[i]==="email" && !obj.value.match(Seiki)){
+                    window.alert("enter vailed mail address");	
+                    return false;
+                }else if(obj.value == ""){
+                    window.alert(hissu[i]+"is required");
+                    obj.focus();
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+
+        function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight > 500) {
+          _offset = 350;
+        } 
+        if(windowHeight > 680) {
+          _offset = 250
+        }
+        if(windowHeight > 830) {
+          _offset = 160;
+        }
+
+        return _offset;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
+
+      // Parallax function
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+      var background_image_parallax = function($object, multiplier, forceSet){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        // $object.css({"background-attatchment" : "fixed"});
+
+        if(forceSet) {
+          setParallaxPosition($doc, multiplier, $object);
+        } else {
+          $(window).scroll(function(){          
+            setParallaxPosition($doc, multiplier, $object);
+          });
+        }
+      };
+
+      var background_image_parallax_2 = function($object, multiplier){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({"background-attachment" : "fixed"});
+        $(window).scroll(function(){
+          var firstTop = $object.offset().top,
+              pos = $(window).scrollTop(),
+              yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({"background-position" : bg_css });
+        });
+      };
+      
+      $(function(){
+        // Hero Section - Background Parallax
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);   
+        
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){          
+          if($(document).scrollTop() > 120) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav();        
+        
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 400, function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
 
     </script>
 </html>
