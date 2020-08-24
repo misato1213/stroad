@@ -1,9 +1,15 @@
 /* @import url(fontawesome.min.css); */
 /* 共通 */
+.wrap {
+	overflow: hidden;
+}
 body {
-    font-family: 'メイリオ', Meiryo, 'NotoSansCJKjp', sans-serif;
+  margin: 0;
+  padding: 0;
+    font-family: 'メイリオ', 'Meiryo', 'NotoSansCJKjp', sans-serif;
     color: #727272;
     font-size: 90%;
+    
 }
 .padding-zero {
     padding: 0px;
@@ -94,15 +100,12 @@ h6:after {
 @media screen and (max-width: 650px){	
   .br-sp { display:block; }
 }
+
   /* 共通 End*/
   
   /* トップ */
 .tm-section-pad-top {
   padding-top: 90px;
-}
-
-.tm-section-pad-top-intro {
-  /* padding-top: 110px; */
 }
 .tm-font-big {
   font-size: 1.1rem;
@@ -142,6 +145,28 @@ h6:after {
 .tm-navbar.scroll {
   background-color: #fff;
   border-bottom: 1px solid #e9ecef;
+}
+
+@media (max-width: 767px) {
+  .tm-btn-submit {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+/* 
+  .navbar-nav {
+    
+  } */
+
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    min-width: 4rem;
+  }
+
+  .navbar-collapse .nav-link {
+    color: #8f8f8f;
+  }
 }
 
 /* .navbar-brand {
@@ -601,6 +626,7 @@ footer a:hover::after {
 /* Form */
 .form-control {
   border: solid 2px #f38e00;
+  margin-right: 50px;
 }
 .form-control:focus {
     border-color: #f38e00;

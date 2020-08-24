@@ -2,6 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="株式会社STロード会社の説明～～～～～～～">
         <meta name="keywords" content="IT, 組織診断, リラクゼーション, マッサージ">
         <meta name="author" content="Misato">
@@ -15,6 +16,8 @@
     </head>
 
     <body>
+        
+        <div class="wrap">
         <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
             <p id="topbutton">▲</p>
         </a>
@@ -114,7 +117,7 @@
         </header>
 
         <!-- はじめに -->
-        <section id="intro" class="tm-section-pad-top-intro anchor">
+        <section id="intro" class="anchor">
             <div class="container padding-btm">
                 <div class="row ctitle">
                     <h4 class="mx-auto"><span>はじめに</span></h4>
@@ -543,21 +546,26 @@
                     <form class="form-style col-12" action="/ooo/RegisterUser" method="get"
                     onSubmit="return registerFormCheck(this)">
                         <div class="form-group row">
+                            <div class="col-sm-2"></div>
                             <label for="inputName" class="col-sm-2 col-form-label">お名前</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-6">
                                 <input type="text" class="form-control" id="inputName" placeholder="田中一郎">
                             </div>
+                            <div class="col-sm-2"></div>
                         </div>
                         <div class="form-group row">
+                            <div class="col-sm-2"></div>
                             <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email アドレス</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-6">
                                 <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
+                            <div class="col-sm-2"></div>
                         </div>
                         <div class="form-group row">
+                            <div class="col-sm-2"></div>
                             <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">カテゴリ</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-6">
                                 <select class="form-control" id="categorySelect">
                                     <option>リラクゼーション事業に関して</option>
                                     <option>スポーツ事業に関して</option>
@@ -565,12 +573,15 @@
                                     <option>その他</option>
                                 </select>
                             </div>
+                            <div class="col-sm-2"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="exampleFormControlTextarea1"  class="col-sm-2 col-form-label">お問合せ内容</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-2"></div>
+                            <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">お問合せ内容</label>
+                            <div class="col-sm-6">
                                 <textarea class="form-control" id="inputTextarea" rows="7"></textarea>
                             </div>
+                            <div class="col-sm-2"></div>
                         </div>
                         <div class="form-group row">
                             <button type="submit" class="btn btn-warning mx-auto">Submit</button>
@@ -624,8 +635,7 @@
                 </div>
             </div>
         </footer>
-	</form>
-
+    </div>
     </body>
     
 
@@ -635,6 +645,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
     <script>
+
         $(window).scroll(function () {
         if ($(window).scrollTop() >= 240) {
         $('nav').css('background','#fff');
