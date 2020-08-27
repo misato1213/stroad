@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+/* @import url(fontawesome.min.css); */
 html,
 body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
     font-size: 90%;
 }
 h3 {
-    color: #364e96;/*文字色*/
+    color: #ff1f9a;/*文字色*/
     padding: 0.5em 0;/*上下の余白*/
-    border-top: solid 3px #364e96;/*上線*/
-    border-bottom: solid 3px #364e96;/*下線*/
+    border-top: solid 3px #ff1f9a;/*上線*/
+    border-bottom: solid 3px #ff1f9a;/*下線*/
     text-align: center;
+    font-weight: bold;
   }
 .padding_btm_70 {
     padding-bottom: 70px;
@@ -22,6 +21,9 @@ h3 {
 }
 .padidng_tp {
     padding-top: 100px;
+}
+.detail{
+    padding: 5px 0px 5px 0px;
 }
 footer a {
     color: #fff;
@@ -40,6 +42,151 @@ footer h2 {
   padding-top: 7%;
   margin-top: 0px;
 }
+
+/* お悩み */
+#onayami  .onayami_box {
+    padding-bottom: 40px;
+}
+#onayami  .onayami_img {
+    height: 400px;
+    /* width: auto; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 200px;
+    border: 7px solid #ff1f9a;
+}
+#onayami .onayami_box > ul{
+    text-align: center;
+    list-style: none;
+}
+.onayami_menu_link{
+    text-align: center;
+}
+.onayami_menu_link a{
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 0 10px;
+    color: #fff;
+    border-radius:25px;
+    box-shadow:4px 4px #555;
+    background-image:-moz-linear-gradient(
+    top,
+    #fc6bbb 0%,
+    #ff1f9a);
+    background-image:-webkit-gradient(
+    linear,left top,left bottom,
+    from(#fc6bbb),
+    to(#ff1f9a));
+}
+.onayami_menu_link a:hover{
+    color: #fff;
+    background-image:-moz-linear-gradient(
+    top,
+    #fa96cd 0%,
+    #ff4fb0);
+    background-image:-webkit-gradient(
+    linear,left top,left bottom,
+    from(#fa96cd),
+    to(#ff4fb0));
+}
+/* お悩み End*/
+
+/* あいさつ */
+#aisatsu {
+    background-color: #f0e2ff;
+}
+#aisatsu .detail{
+    font-size: 110%;
+}
+#aisatsu  .aisatsu_img {
+    /* height: 250px; */
+    margin-bottom: 30px;
+    height: 350px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+    border: 7px solid #ffffff;
+}
+/* あいさつ　End */
+
+/* お知らせ */
+/*ボックス全体*/
+.accbox {
+    margin: 2em 0;
+    padding: 0;
+    /* max-width: 400px;最大幅 */
+}
+
+/*ラベル*/
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 13px 12px;
+    color: #ff1f9a;
+    font-weight: bold;
+    background: #ffffff;
+    cursor :pointer;
+    border: 2px solid #ff1f9a;
+    /* transition: all 0.5s; */
+}
+
+/*アイコンを表示*/
+.accbox label:before {
+    font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107"; /*←ココ！！！！！！！*/
+    padding-right: 8px;
+}
+
+/*ラベルホバー時*/
+.accbox label:hover {
+    color: #fc6bbb;
+}
+
+/*チェックは隠す*/
+.accbox input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + label + .accshow {
+    height: auto;
+    padding: 20px 20px 20px 25px;
+    background: #ff9bd72f;
+    opacity: 1;
+    font-weight: bold;
+    color: #ff1f9a;
+}
+
+/* .accbox .accshow p {
+    margin: 15px 10px;
+} */
+
+/*アイコンを入れ替える*/
+.cssacc:checked + label:before {
+    font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f106"; /*←ココ！！！！！！！*/
+}
+
+/* お知らせ End */
+
+
 /* Google Map */
 .gmap {
     height: 0;
@@ -67,192 +214,52 @@ footer h2 {
     padding-bottom: 15px;
 }
 
-
-.nav {
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    line-height: 80px;
-    text-align: center;
+/* Nav bar */
+#nav {
     z-index: 1000;
 }
-
-.nav div.logo {
-    float: left;
-    width: auto;
-    height: auto;
+.navbar {
+    background-color: #ff1f9a;
+    font-weight: bold;
 }
-
-.nav div.logo a {
-    text-decoration: none;
+.navbar a{
     color: #fff;
-    font-size: 150%;
+}
+.navbar a:hover{
+    color: #5e0033;
 }
 
-.nav div.logo a:hover {
-    color: #00E676;
-}
-
-.nav div.main_list {
-    height: 75px;
-    float: right;
-}
-
-.nav div.main_list ul {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav div.main_list ul li {
-    width: auto;
-    height: 75px;
-    padding: 0;
-    padding-right: 25px;
-}
-
-.nav div.main_list ul li a {
-    text-decoration: none;
+.navbar-toggler {
     color: #fff;
-    line-height: 80px;
-    /* font-size: 110%; */
+    background-color: #fff;
 }
-
-.nav div.main_list ul li a:hover,
-.navbar a:hover,
-footer a:hover  {
-    color: #00E676;
+.dropdown-menu {
+    background: transparent;
+    border-style: none;
 }
-
-.home {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
-    background-position: center top;
-	background-size:cover;
-}
-
-.navTrigger {
-    display: none;
-}
-
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-.dropdown {
-    float: left;
-    /* overflow: hidden; */
-  }
-  
-  .dropdown .dropbtn {
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    text-decoration: none;
+.dropdown-menu > a {
+    font-size: 90%;
+    margin: 0px;
+    padding 0px;
     color: #fff;
-    line-height: 80px;
-    /* font-size: 110%; */
-  }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    text-decoration: none;
-    color: #fff;
-    /* font-size: 110%; */
-    min-width: 160px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    /* z-index: 1000; */
-    /* padding: 0% 0% 0% 3%; */
-    top: 80px;
-  }
-  
-  .dropdown-content p {
-    float: none;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    padding: 0% 0% 0% 10%;
-  }
- 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-#onayami  .onayami_img {
-      height: 250px;
-      width: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
-#onayami .onayami_box > ul {
-    text-align: center;
-    list-style: none;
+    background-color: #ff1f9a;
 }
-.onayami_box > a {
-    text-align: center;
+.dropdown-menu > a:hover {
+    background-color: #fff;
+    border-style: none;
 }
 
-/* あいさつ */
-#aisatsu  .aisatsu_img {
-    /* height: 250px; */
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* あいさつ　End */
+/* Nav bar End */
 
-/* お知らせ */
-.accbox {
-    /* margin: 2em 0; */
-    padding: 0;
-    /* max-width: 400px;最大幅 */
-}
-.accbox label {
-    display: block;
-    margin: 1.5px 0;
-    padding : 11px 12px;
-    color :#000000;
-    background :#f1f1f1;
-    cursor :pointer;
-    transition: all 0.5s;
-}
-.accbox label:hover {
-    background :#d1d1d1;
-}
-.accbox input {
-    display: none;
-}
-.accbox .accshow {
-    height: 5px;
-    /* padding: 0; */
-    overflow: hidden;
-    opacity: 0;
-    /* transition: 0.2s; */
-}
-.cssacc:checked + .accshow {
-    height: auto;
-    padding: 5px;
-    background: #ffffff;
-    opacity: 1;
+
+/*  */
+.carousel,
+.carousel-item {
+    padding-top:30px ;
+    height: 400px;
 }
 
-/* お知らせ End */
-
+/*  */
 
 /* Media qurey section */
 
@@ -263,243 +270,5 @@ footer a:hover  {
 }
 
 @media screen and (max-width:768px) {
-    .navTrigger {
-        display: block;
-    }
-    .nav div.logo {
-        margin-left: 15px;
-    }
-    .nav div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav div.show_list {
-        height: auto;
-        display: none;
-    }
-    .nav div.main_list ul {
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: #111;
-        /*same background color of navbar*/
-        background-position: center top;
-    }
-    .nav div.main_list ul li {
-        width: 100%;
-        text-align: right;
-    }
-    .nav div.main_list ul li a {
-        text-align: center;
-        width: 100%;
-        font-size: 15px;
-        padding: 20px;
-    }
-    .nav div.media_button {
-        display: block;
-    }
-    .nav .dropdown-content {
-        top: 0px;
-      }
-}
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
-.navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    bottom: 0;
-}
-
-.navTrigger i {
-    background-color: #fff;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
-
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
-}
-
-@-webkit-keyframes inM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes inM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes outM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes outM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes inT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes inT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes outT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes inBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes inBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes outBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-.affix {
-    padding: 0px;
-    background-color: #111;
+ 
 }
