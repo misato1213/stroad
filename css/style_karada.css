@@ -48,14 +48,14 @@ footer h2 {
     padding-bottom: 40px;
 }
 #onayami  .onayami_img {
-    height: 400px;
+    height: 200px;
     /* width: auto; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     border-radius: 200px;
-    border: 7px solid #ff1f9a;
+    border: 4px solid #ff1f9a;
 }
 #onayami .onayami_box > ul{
     text-align: center;
@@ -98,7 +98,7 @@ footer h2 {
 
 /* あいさつ */
 #aisatsu {
-    background-color: #f0e2ff;
+    /* background-color: #f0e2ff; */
 }
 #aisatsu .detail{
     font-size: 110%;
@@ -112,7 +112,7 @@ footer h2 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 200px;
-    border: 7px solid #ffffff;
+    border: 4px solid #ff1f9a;
 }
 /* あいさつ　End */
 
