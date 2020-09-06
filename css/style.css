@@ -498,6 +498,34 @@ h6:after {
   text-align: center;
   vertical-align: middle;
 }
+.text_center{
+  text-align: center;
+}
+.label_padding_right {
+  padding-right: 30px;
+}
+#toiawase input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'メイリオ', 'Meiryo', 'NotoSansCJKjp', sans-serif;
+  color: #b4b4b4;
+  font-size: 90%;
+  opacity: 1; /* Firefox */
+}
+#toiawase input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b4b4b4;
+  font-size: 90%;
+}
+#toiawase input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b4b4b4;
+  font-size: 90%;
+}
+#toiawase option,
+#toiawase select,
+#toiawase textarea,
+#toiawase input {
+  font-family: 'メイリオ', 'Meiryo', 'NotoSansCJKjp', sans-serif;
+  color: #727272;
+  font-size: 90%;
+}
 /* img End */
 
 /* Footer */
