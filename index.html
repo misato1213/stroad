@@ -511,13 +511,13 @@ method="get"
 -->
 
                 <div class="row detail">
-                    <form class="form-style col-12" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfczfkCGkvqwT_UV3j3SAYI0IsZkLJA2SxlSNJJyfVDtLXC3A/formResponse" 
+                    <form class="form-style col-12" action="https://stroad-node-backend.herokuapp.com/contact_request" 
                     method="post" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="form-group row">
                             <div class="col-sm-2"></div>
                             <label for="inputName" class="col-sm-2 col-form-label">お名前</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputName" placeholder="フルネームで入力してください" name="entry.725590045">
+                                <input type="text" class="form-control" id="inputName" placeholder="フルネームで入力してください" name="name">
                             </div>
                             <div class="col-sm-2"></div>
                         </div>
@@ -525,16 +525,16 @@ method="get"
                             <div class="col-sm-2"></div>
                             <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email アドレス</label>
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="メールアドレスを入力してください" name="entry.487183981">
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="メールアドレスを入力してください" name="email">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="col-sm-2"></div>
                         </div>
-                        <!-- <div class="form-group row">
+                        <div class="form-group row">
                             <div class="col-sm-2"></div>
                             <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">カテゴリ</label>
                             <div class="col-sm-6">
-                                <select class="form-control" id="categorySelect" name="entry.1598508298">
+                                <select class="form-control" id="categorySelect" name="category">
                                     <option>リラクゼーション事業に関して</option>
                                     <option>スポーツ事業に関して</option>
                                     <option>IT事業に関して</option>
@@ -542,12 +542,12 @@ method="get"
                                 </select>
                             </div>
                             <div class="col-sm-2"></div>
-                        </div> -->
+                        </div>
                         <div class="form-group row">
                             <div class="col-sm-2"></div>
                             <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">お問合せ内容</label>
                             <div class="col-sm-6">
-                                <textarea class="form-control" id="inputTextarea" rows="7" name="entry.1053651553"></textarea>
+                                <textarea class="form-control" id="inputTextarea" rows="7" name="message"></textarea>
                             </div>
                             <div class="col-sm-2"></div>
                         </div>
@@ -555,8 +555,8 @@ method="get"
                             <button type="submit" class="btn btn-warning mx-auto">送信</button>
                         </div>
                     </form>
-                    <script type="text/javascript">var submitted = false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+                    <!-- <script type="text/javascript">var submitted = false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe> -->
                 </div>
             </div>
         </section>
