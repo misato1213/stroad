@@ -105,6 +105,10 @@ h6:after {
 @media screen and (max-width: 650px){	
   .br-sp { display:block; }
 }
+.item_center {
+  text-align: center;
+  align-self: center;
+}
 
   /* 共通 End*/
   
@@ -293,7 +297,7 @@ h6:after {
   padding-top: 4%;
   padding-bottom: 4px;
   background-size: cover;
-  background: url("../images/cta03.jpg") no-repeat center;
+  background: url("../images/cta02.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   height:100%;
@@ -337,6 +341,30 @@ h6:after {
 .update-main-style > li,
 .update-main-style > span {
   font-size: 90%;
+}
+#jigyou .toiawase_btn {
+  /* z-index: 2; */
+  /* position: absolute; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  margin: auto;
+  padding: .5em 0;
+  border-radius: 10px;
+  background: #f38e00;
+  color: #fff;
+  text-align: center;
+  transition: .2s ease;
+}
+#jigyou .toiawase_btn a{
+  color:#fff;
+  text-decoration: none;
+}
+#jigyou .toiawase_btn:hover,
+#jigyou .toiawase_btn a:hover{
+  text-decoration: none;
+  background-color: #ffb246;
 }
 
 #gaiyou .list-style-non{
@@ -507,16 +535,16 @@ h6:after {
 #toiawase input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: 'メイリオ', 'Meiryo', 'NotoSansCJKjp', sans-serif;
   color: #b4b4b4;
-  font-size: 90%;
+  /* font-size: 90%; */
   opacity: 1; /* Firefox */
 }
 #toiawase input:-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #b4b4b4;
-  font-size: 90%;
+  /* font-size: 90%; */
 }
 #toiawase input::-ms-input-placeholder { /* Microsoft Edge */
   color: #b4b4b4;
-  font-size: 90%;
+  /* font-size: 90%; */
 }
 #toiawase option,
 #toiawase select,
@@ -524,8 +552,25 @@ h6:after {
 #toiawase input {
   font-family: 'メイリオ', 'Meiryo', 'NotoSansCJKjp', sans-serif;
   color: #727272;
-  font-size: 90%;
+  /* font-size: 90%; */
 }
+#toiawase .submit_btn {
+  /* z-index: 2; */
+  /* position: absolute; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  margin: auto;
+  padding: .5em 0;
+  border-radius: 10px;
+  background: #f38e00;
+  color: #fff;
+  /* text-align: center; */
+  /* cursor: pointer; */
+  transition: .2s ease;
+}
+
 /* img End */
 
 /* Footer */
@@ -656,6 +701,9 @@ footer a:hover::after {
   text-align: center;
   cursor: pointer;
   transition: .2s ease;
+}
+.grad-btn:hover {
+  background: #ffb246;
 }
 .grad-btn::before {
   content: "さらに表示"
